@@ -25,7 +25,16 @@
 
     let machineResult;
     let pwdResult;
-
+    if (machineActive) {
+      machineResult = "It's on";
+      if (pwd === "cheese") {
+        pwdResult = "You logged in successfully";
+      } else {
+        pwdResult = "Login attempt was not successful";
+      }
+    } else {
+      machineResult = "It's off";
+    }
     // Add your code here
 
     // Don't edit the code below here!
